@@ -1,0 +1,458 @@
+/*----ICONOS----*/
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?gij9r9');
+  src:  url('../fonts/icomoon.eot?gij9r9#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?gij9r9') format('truetype'),
+    url('../fonts/icomoon.woff?gij9r9') format('woff'),
+    url('../fonts/icomoon.svg?gij9r9#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-linkedin:before {
+  content: "\e907";
+}
+.icon-github:before {
+  content: "\e900";
+}
+.icon-twitter:before {
+  content: "\e901";
+}
+.icon-instagram:before {
+  content: "\e902";
+}
+.icon-facebook:before {
+  content: "\e903";
+}
+.icon-menu:before {
+  content: "\e904";
+}
+
+
+
+/*----ESTILOS GENERALES----*/
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: normal;
+}
+
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #026fff;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+figure {
+  margin: 0;
+}
+
+/*----H1 DE LA PAGINA ----*/
+
+h1 {
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: -.2px;
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+h1 strong {
+  color: #026fff;
+}
+
+
+/*----HEADER----*/
+
+.header {
+  background-color: #000000;
+  color: white;
+  display: flex;
+  height: 110px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/*----------- como se hizo el menu del header ----------*/
+
+.menu {
+  height: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header ul {
+  display: flex; 
+  height: inherit;
+}
+
+.header li {
+  height: inherit;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 20px;
+  font-size: 1.3em;
+}
+
+/*----------- como se hizo el menu del header ----------*/
+
+
+/*----HEROE----*/
+
+.hero {
+  background-color: #000000;
+  height: 450px;;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero img {
+  object-fit: cover;
+  border-radius: 4%;
+}
+
+
+/*----ALEJANDRO----*/
+
+.alejandro h2 {
+  text-align: left;
+}
+
+.alejandro p {
+  font-size: 1.5em;
+  text-align: left;
+}
+/*----PORTFOLIO----*/
+
+.portfolio{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.certificate-list {
+  display: inherit;
+}
+
+.certificate {
+margin: .8em .8em; 
+}
+
+.certificate img {
+  border: 5px solid #03a667;
+  border-radius: 2%;
+}
+
+/*----Contactos----*/
+
+.contact {
+  background-color: #026fff;
+  color: white;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.contact-email input {
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px 10px 25px;
+  background-image: url('../images/envelope.svg');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
+.contact-email button {
+  flex-direction: column;
+  background: transparent;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.social {
+  display: flex;
+}
+
+.icon-twitter {
+  font-size: 50px;
+  color: white; 
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.icon-facebook {
+  font-size: 50px;
+  color: white; 
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.icon-instagram {
+  font-size: 50px;
+  color: white; 
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.icon-github {
+  font-size: 50px;
+  color: white; 
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+
+/*----FOOTER----*/
+
+.footer {
+  background: #000000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/*----CONTAINER----*/
+
+.Container{
+  max-width: 1200px;
+  /* width: 100%; */ /*esta es una opcion de como arreglar el header */
+  flex: 1; /*esta es una mejor opcion de como resolverlo*/
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+
+/*----BURGUER MENU----*/
+
+.burger-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 5;
+  left: 5px;
+  top: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+
+/*----DESTOK FIRS----*/
+
+@media screen and (max-width: 1055px) {
+  
+  /*----HERO----*/
+
+  .hero {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+  }
+
+  .hero img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2em;
+    z-index: 2;
+    color: #000000;
+  }
+
+
+  /*----PORTFOLIO----*/
+  .img-certificate {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.7em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  
+  /*----HEADER----*/
+
+  .header {
+    height: auto;
+    display: block;
+  }
+
+  .header ul {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .header ul li {
+    height: 50px;
+  }
+
+  .header a {
+    justify-content: center;
+    height: 40px;
+    font-size: 1.8em;
+    margin-bottom: .5em;
+  }
+
+  .header .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+    /* margin: 10px; */
+  }
+
+
+  /*----BURGUER MENU----*/
+
+  .burger-button {
+    display: flex;
+  }
+
+  .menu {
+    position: fixed;
+    background:rgba(2, 111, 255, .8);
+    z-index: 4;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -100%;
+    transition: .3s;
+    text-decoration: underline;
+  }
+
+  .header ul {
+    height: auto; /*estaba heredando el alto lo que generaba problemas*/
+  }
+
+  .menu.is-active {
+    left: 0;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  
+  /*----ALEJANDRO----*/
+
+.alejandro p {
+  font-size: 1.3em;
+}
+
+
+  /*----CONTACT----*/
+
+  .contact {
+    height: auto;
+    justify-content: center;
+  }
+
+  .contact-email {
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.contact-email button {
+  margin-top: -20px;
+}
+
+  .social {
+    display: flex;
+    margin: 1.3em 0;
+  }
+
+
+/*----CONTACT----*/
+
+  .footer {
+    display: block;
+    text-align: center;
+    border: 2px solid transparent;
+  }
+
+  .footer img {
+    margin-top: 15px;
+  }
+
+  .footer p {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  
+}
